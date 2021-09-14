@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "ce539780-5abc-4e58-b4bf-ca09aaf3450f",
+		"name": "EveryMundo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "XML Sitemaps",
+			"item": [
+				{
+					"name": "XML SITEMAP MONITORING TEST",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							}
+						],
+						"url": {
+							"raw": "https://{{Parent XMl Sitemap}}/sitemap_index.xml ",
+							"protocol": "https",
+							"host": [
+								"{{Parent XMl Sitemap}}"
+							],
+							"path": [
+								"sitemap_index.xml "
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Robots",
+			"item": [
+				{
+					"name": "ROBOTS.TXT MONITORING TEST",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							}
+						],
+						"url": {
+							"raw": "https://{{Robots}}/robots.txt",
+							"protocol": "https",
+							"host": [
+								"{{Robots}}"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
