@@ -1,0 +1,5506 @@
+{
+	"info": {
+		"_postman_id": "a61176a3-9881-4930-b242-18d16bab0eb9",
+		"name": "XML Sitemaps and Robots.txt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "XML Sitemaps",
+			"item": [
+				{
+					"name": "Aegean",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.aegeanair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"aegeanair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aeromexico",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.aeromexico.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"aeromexico",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aer Lingus",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.aerlingus.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aerlingus",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Air Canada",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.aircanada.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aircanada",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Air Europa",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.aireuropa.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aireuropa",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alaska Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.alaskaair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"alaskaair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alitalia",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.alitalia.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"alitalia",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "American Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.aa.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aa",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "American Airlines Vacations",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.aavacations.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aavacations",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ANA",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.ana.co.jp/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"ana",
+								"co",
+								"jp"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Avianca (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.avianca.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"avianca",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cape Air",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.capeair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"capeair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cathay Pacific",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.cathaypacific.com/destinations/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"cathaypacific",
+								"com"
+							],
+							"path": [
+								"destinations",
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Copa Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://destinationsguide.copaair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"destinationsguide",
+								"copaair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eastern Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.iflyea.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"iflyea",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Etihad",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.etihad.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"etihad",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ethiopian Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.ethiopianairlines.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"ethiopianairlines",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVA Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.evaair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"evaair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fiji Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.fijiairways.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"fijiairways",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flair Airlines (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.flyflair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"flyflair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flyadeal (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.flyadeal.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"flyadeal",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flydubai (TRFX)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.flydubai.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"flydubai",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Frontier",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.flyfrontier.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"flyfrontier",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Greyhound Lines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.greyhound.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"greyhound",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hainan Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.hainanairlines.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"hainanairlines",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Japan Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.jal.co.jp/flights/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"jal",
+								"co",
+								"jp"
+							],
+							"path": [
+								"flights",
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Japan Airlines Vacations",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.jal.co.jp/vacations/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"jal",
+								"co",
+								"jp"
+							],
+							"path": [
+								"vacations",
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jeju Air",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.jejuair.net/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"jejuair",
+								"net"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Kenya Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.kenya-airways.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"kenya-airways",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KLM",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.klm.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"klm",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LATAM",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.latam.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"latam",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logan Air",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.loganair.co.uk/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"loganair",
+								"co",
+								"uk"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Olympic Air",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.olympicair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"olympicair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Royal Brunei Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  ;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.flyroyalbrunei.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"flyroyalbrunei",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Singapore Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  \r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.singaporeair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"singaporeair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Spirit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.spirit.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"spirit",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SriLankan Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.srilankan.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"srilankan",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Star Alliance",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.staralliance.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"staralliance",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tap Portugal",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.flytap.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"flytap",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thai Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.thaiairways.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"thaiairways",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thai Smile`Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.thaismileair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"thaismileair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "United",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.united.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"united",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vietnam Airlines (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.vietnamairlines.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"vietnamairlines",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Virgin Atlantic",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.virginatlantic.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"virginatlantic",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Virgin Australia",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.virginaustralia.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"virginaustralia",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Volaris (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.volaris.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"volaris",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wingo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.wingo.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"www",
+								"wingo",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xiamen",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.xiamenair.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"xiamenair",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "YaVas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://paquetes.yavas.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"paquetes",
+								"yavas",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tianjin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"    console.error(\"The status code is not 200\")\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Text does not contain Error\", function () {\r",
+									"    if(pm.expect(pm.response.text()).to.not.include(\"error\"))\r",
+									"    {\r",
+									"        console.log(\"The response does not contain 'error' \");\r",
+									"    }\r",
+									"     else\r",
+									"    {\r",
+									"     console.error(\"The response contain 'error'\");\r",
+									"    }\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is not text/html\", function()\r",
+									"{\r",
+									"    if(pm.expect(pm.response.headers.get('Content-Type')).to.not.equals(\"text/html\"))\r",
+									"    {\r",
+									"        console.log(\"Content-Type header is not text/html\");\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        console.error(\"Content-Type header is text/html\");\r",
+									"    }\r",
+									"  });\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://flights.tianjin-air.com/sitemap_index.xml",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"tianjin-air",
+								"com"
+							],
+							"path": [
+								"sitemap_index.xml"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Robots",
+			"item": [
+				{
+					"name": "Aegean",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.aegeanair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"aegeanair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aeromexico",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.aeromexico.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"aeromexico",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ANA",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.ana.co.jp/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"ana",
+								"co",
+								"jp"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cape Air",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.capeair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"capeair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Copa Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://destinationsguide.copaair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"destinationsguide",
+								"copaair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eastern Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.iflyea.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"iflyea",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Etihad",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.etihad.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"etihad",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVA Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.evaair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"evaair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flair Airlines (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.flyflair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"flyflair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Frontier",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.flyfrontier.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"flyfrontier",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hainan Airlines",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.hainanairlines.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"hainanairlines",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Japan Airlines Vacations",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "www.jal.co.jp/vacations",
+							"host": [
+								"www",
+								"jal",
+								"co",
+								"jp"
+							],
+							"path": [
+								"vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Olympic Air",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://www.olympicair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"www",
+								"olympicair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Star Alliance",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.staralliance.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"staralliance",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tap Portugal",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.flytap.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"flytap",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thai Airways",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.thaiairways.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"thaiairways",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Virgin Atlantic",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.virginatlantic.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"virginatlantic",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Virgin Australia",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.virginaustralia.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"virginaustralia",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Volaris (Van Gogh)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.volaris.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"volaris",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xiamen",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.xiamenair.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"xiamenair",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "YaVas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://paquetes.yavas.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"paquetes",
+								"yavas",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tianjin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test (\"Status code test\",\r",
+									"function (){\r",
+									"    if(pm.response.to.have.status(200))\r",
+									"    {\r",
+									"       console.log(\"The status code is 200\" );\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Text contains Disallow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Disallow:\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains  Disallow:\")\r",
+									"    }\r",
+									"}); \r",
+									"    \r",
+									"pm.test(\"Text contains Allow\", function () {\r",
+									"    if( pm.expect(pm.response.text()).to.include(\"Allow: /\"))\r",
+									"    {\r",
+									"        console.log(\"Text contains Allow: /\")\r",
+									"    }\r",
+									"\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "__cfruid=2862a1b865b04d898f9be0a5008a8e0f3c6ba4f3-1631218941"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://flights.tianjin-air.com/robots.txt",
+							"protocol": "https",
+							"host": [
+								"flights",
+								"tianjin-air",
+								"com"
+							],
+							"path": [
+								"robots.txt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
